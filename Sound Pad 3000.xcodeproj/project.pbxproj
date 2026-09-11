@@ -6,8 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A1B2C3D4E5F6012345678901 /* Sound Pad 3000/Fonts/medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6012345678902 /* Sound Pad 3000/Fonts/medium.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		955DA6193053753600644401 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 955DA5E63053753400644401 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 955DA5ED3053753400644401;
+			remoteInfo = "Sound Pad 3000";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		955DA5EE3053753400644401 /* Sound Pad 3000.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sound Pad 3000.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		955DA6103053753600644401 /* Sound Pad 3000Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sound Pad 3000Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1B2C3D4E5F6012345678902 /* Sound Pad 3000/Fonts/medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sound Pad 3000/Fonts/medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +32,22 @@
 			path = "Sound Pad 3000";
 			sourceTree = "<group>";
 		};
+		955DA6113053753600644401 /* Sound Pad 3000Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Sound Pad 3000Tests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		955DA5EB3053753400644401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955DA6143053753600644401 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				955DA5F03053753400644401 /* Sound Pad 3000 */,
+				955DA6113053753600644401 /* Sound Pad 3000Tests */,
+				A1B2C3D4E5F6012345678902 /* Sound Pad 3000/Fonts/medium.otf */,
 				955DA5EF3053753400644401 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				955DA5EE3053753400644401 /* Sound Pad 3000.app */,
+				955DA6103053753600644401 /* Sound Pad 3000Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +101,29 @@
 			productReference = 955DA5EE3053753400644401 /* Sound Pad 3000.app */;
 			productType = "com.apple.product-type.application";
 		};
+		955DA6123053753600644401 /* Sound Pad 3000Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 955DA6183053753600644401 /* Build configuration list for PBXNativeTarget "Sound Pad 3000Tests" */;
+			buildPhases = (
+				955DA6133053753600644401 /* Sources */,
+				955DA6143053753600644401 /* Frameworks */,
+				955DA6153053753600644401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				955DA61A3053753600644401 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				955DA6113053753600644401 /* Sound Pad 3000Tests */,
+			);
+			name = "Sound Pad 3000Tests";
+			packageProductDependencies = (
+			);
+			productName = "Sound Pad 3000Tests";
+			productReference = 955DA6103053753600644401 /* Sound Pad 3000Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +136,10 @@
 				TargetAttributes = {
 					955DA5ED3053753400644401 = {
 						CreatedOnToolsVersion = 26.4.1;
+					};
+					955DA6123053753600644401 = {
+						CreatedOnToolsVersion = 26.4.1;
+						TestTargetID = 955DA5ED3053753400644401;
 					};
 				};
 			};
@@ -100,12 +158,21 @@
 			projectRoot = "";
 			targets = (
 				955DA5ED3053753400644401 /* Sound Pad 3000 */,
+				955DA6123053753600644401 /* Sound Pad 3000Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		955DA5EC3053753400644401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B2C3D4E5F6012345678901 /* Sound Pad 3000/Fonts/medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		955DA6153053753600644401 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +189,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		955DA6133053753600644401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		955DA61A3053753600644401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 955DA5ED3053753400644401 /* Sound Pad 3000 */;
+			targetProxy = 955DA6193053753600644401 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		955DA5F73053753500644401 /* Debug */ = {
@@ -256,17 +338,21 @@
 				DEVELOPMENT_TEAM = V658BJYP75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record a custom sound for a pad.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "aestech.Sound-Pad-3000";
+				PRODUCT_MODULE_NAME = Sound_Pad_3000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -288,17 +374,21 @@
 				DEVELOPMENT_TEAM = V658BJYP75;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record a custom sound for a pad.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "aestech.Sound-Pad-3000";
+				PRODUCT_MODULE_NAME = Sound_Pad_3000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -307,6 +397,46 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		955DA6163053753600644401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V658BJYP75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aestech.Sound-Pad-3000Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sound Pad 3000.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sound Pad 3000";
+			};
+			name = Debug;
+		};
+		955DA6173053753600644401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V658BJYP75;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "aestech.Sound-Pad-3000Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sound Pad 3000.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sound Pad 3000";
 			};
 			name = Release;
 		};
@@ -327,6 +457,15 @@
 			buildConfigurations = (
 				955DA5FA3053753500644401 /* Debug */,
 				955DA5FB3053753500644401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		955DA6183053753600644401 /* Build configuration list for PBXNativeTarget "Sound Pad 3000Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				955DA6163053753600644401 /* Debug */,
+				955DA6173053753600644401 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

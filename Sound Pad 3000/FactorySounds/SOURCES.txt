@@ -1,0 +1,11 @@
+Fonte: Mixkit (https://mixkit.co/) — Mixkit License, uso comercial permitido.
+Não estão ligados ao app ainda; só arquivos no disco.
+
+01-party-horn.wav  Mixkit Happy party horn sound #530          ~2.0s
+02-rimshot.wav     Mixkit Toy drums and bell ding #560         ~1.4s  (substituto do ba-dum-tss)
+03-buzzer.wav      Mixkit Wrong answer bass buzzer #948        ~2.5s
+04-ding.wav        Mixkit Correct answer tone #2870            ~2.0s
+05-applause.wav    Mixkit Football team applause #516          ~8.3s
+06-sad-horn.wav    Mixkit Cartoon sad party horn #527          ~1.5s  (substituto do sad trombone)
+07-whoosh.wav      Mixkit Cinematic whoosh fast transition #1492 ~1.3s
+08-boom.wav        Mixkit Short explosion #1694                ~1.3s
