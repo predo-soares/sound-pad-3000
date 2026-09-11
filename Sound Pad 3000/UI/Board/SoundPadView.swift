@@ -8,10 +8,9 @@ struct SoundPadView: View {
     var onLongPress: () -> Void
 
     @State private var skipTap = false
-    @GestureState private var isTouching = false
+    @State private var isPressed = false
 
     private var isEmpty: Bool { !pad.hasAudio }
-    private var isDown: Bool { isEmpty || isTouching || isPlaying }
 
     var body: some View {
         Button {
@@ -21,15 +20,14 @@ struct SoundPadView: View {
             }
             onTap()
         } label: {
-            PadFace(pad: pad, litBars: litBars, isEmpty: isEmpty, isDown: isDown)
+            PadFace(
+                pad: pad,
+                litBars: litBars,
+                isEmpty: isEmpty,
+                isDown: isEmpty || isPressed || isPlaying
+            )
         }
-        .buttonStyle(.plain)
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .updating($isTouching) { _, state, _ in
-                    state = pad.hasAudio
-                }
-        )
+        .buttonStyle(PressForwardingStyle(isPressed: $isPressed))
         .simultaneousGesture(
             LongPressGesture(minimumDuration: 0.45)
                 .onEnded { _ in
@@ -53,6 +51,17 @@ struct SoundPadView: View {
             audio = "has sound"
         }
         return "\(name), \(audio)"
+    }
+}
+
+private struct PressForwardingStyle: ButtonStyle {
+    @Binding var isPressed: Bool
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .onChange(of: configuration.isPressed) { _, pressed in
+                isPressed = pressed
+            }
     }
 }
 

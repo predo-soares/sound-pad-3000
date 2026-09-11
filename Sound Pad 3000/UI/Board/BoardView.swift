@@ -28,10 +28,10 @@ struct BoardView: View {
                 }
                 .padding(.horizontal, Theme.gridPaddingHorizontal)
                 .padding(.vertical, Theme.gridPaddingVertical)
-                .background(Theme.canvas)
                 .frame(maxWidth: .infinity)
             }
             .scrollBounceBehavior(.always)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(Theme.canvas.ignoresSafeArea())
         .preferredColorScheme(.dark)
